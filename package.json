@@ -1,8 +1,8 @@
 {
   "name": "unix-timestamp-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Emits a file that contains a unix timestamp of your latest webpack build",
-  "main": "dist/UnixTimestampPlugin.js",
+  "main": "lib/UnixTimestampPlugin.js",
   "scripts": {
     "build": "babel ./src --out-dir ./lib --source-maps --copy-files",
     "test": "echo \"Error: no test specified\" && exit 1"
