@@ -1,0 +1,29 @@
+{
+  "name": "unix-timestamp-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Emits a file that contains a unix timestamp of your latest webpack build",
+  "main": "dist/UnixTimestampPlugin.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./lib --source-maps --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dschu-lab/unix-timestamp-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "build",
+    "timestamp"
+  ],
+  "author": "Julian Müller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dschu-lab/unix-timestamp-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/dschu-lab/unix-timestamp-webpack-plugin#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
