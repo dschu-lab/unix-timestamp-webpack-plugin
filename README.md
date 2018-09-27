@@ -23,16 +23,18 @@ module.exports = {
 
 ## Options
 
-Timestamp Webpack Plugin accepts two options, path and filename
-
-```js
-new UnixTimestampPlugin({
-    filePath: path.join(__dirname, 'app'),
-    fileName: '.build-timestamp'
-})
-```
 
 | Option    |   Default             |
 |-----------|-----------------------|
 | filePath  | `./`                  |
 | fileName  | `.build-timestamp`    |
+
+
+**Example**
+
+```js
+new UnixTimestampPlugin({
+    filePath: path.join(__dirname, 'app'),
+    fileName: 'build-timestamp.txt'
+})
+```
