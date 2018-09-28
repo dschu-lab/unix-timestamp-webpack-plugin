@@ -5,7 +5,8 @@
   "main": "lib/UnixTimestampPlugin.js",
   "scripts": {
     "build": "babel ./src --out-dir ./lib --source-maps --copy-files",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test-case": "webpack --config ./test/cases/simple/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,11 @@
   },
   "homepage": "https://github.com/dschu-lab/unix-timestamp-webpack-plugin#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.1.0",
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
   }
 }
