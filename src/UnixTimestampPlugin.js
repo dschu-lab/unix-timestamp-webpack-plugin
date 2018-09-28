@@ -14,11 +14,7 @@ class UnixTimestampPlugin {
         compiler.plugin('done', function(compilation, callback, options=this.options) {
             console.log(`Writing build timestamp... ${compilation.endTime}`);
 
-            fs.writeFileSync(
-                `${options.filePath}/${options.fileName}`,
-                compilation.endTime,
-                'utf8'
-            )
+            fs.writeFileSync(`${options.filePath}/${options.fileName}`, compilation.endTime, 'utf8')
         }.bind(this));
     }
 }
