@@ -25,6 +25,7 @@
   "peerDependencies": {
     "webpack": "^3.1.0"
   },
+  "prepublish": "npm run test && npm run build",
   "homepage": "https://github.com/dschu-lab/unix-timestamp-webpack-plugin#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.1.0",
