@@ -17,7 +17,7 @@ describe('Webpack Integration Tests', () => {
             let options = { entry: { test: './index.js' } };
             const testDirectory = path.join(__dirname, 'cases', testCase);
             const outputDirectory = path.join(__dirname, 'js', testCase);
-            const configFile = path.join(testDirectory, 'webpack.config.js');
+            const configFile = path.join(testDirectory, 'webpack.config.babel.js');
 
 
             if (fs.existsSync(configFile)) {

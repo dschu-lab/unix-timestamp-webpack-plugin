@@ -11,11 +11,22 @@ class UnixTimestampPlugin {
     }
 
     apply(compiler) {
-        compiler.plugin('done', function(compilation, callback, options=this.options) {
-            console.log(`Writing build timestamp... ${compilation.endTime}`);
+        if (compiler.hasOwnProperty('hooks')) {
+            compiler.hooks.done.tap('UnixTimestampPlugin', (compilation) => {
+                this.writeTimestamp(compilation.endTime);
+            });
+        }
+        else {
+            compiler.plugin('done', (compilation) => {
+                this.writeTimestamp(compilation.endTime);
+            });
+        }
+    }
 
-            fs.writeFileSync(`${options.filePath}/${options.fileName}`, compilation.endTime, 'utf8')
-        }.bind(this));
+    writeTimestamp(timestamp) {
+        console.log(`Writing build timestamp... ${timestamp}`);
+
+        fs.writeFileSync(`${this.options.filePath}/${this.options.fileName}`, timestamp, 'utf8');
     }
 }
 

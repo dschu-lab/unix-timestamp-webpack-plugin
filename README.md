@@ -3,7 +3,9 @@
 [![npm version](https://badge.fury.io/js/unix-timestamp-webpack-plugin.svg)](https://badge.fury.io/js/unix-timestamp-webpack-plugin)
 [![Build Status](https://travis-ci.org/dschu-lab/unix-timestamp-webpack-plugin.svg?branch=master)](https://travis-ci.org/dschu-lab/unix-timestamp-webpack-plugin)
 
-Emits a file that contains a unix timestamp of your latest webpack build
+Emits a file that contains a unix timestamp of your latest webpack build.
+
+*Works with webpack 3.1 and later*
 
 ## Install
 
