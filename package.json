@@ -1,6 +1,6 @@
 {
   "name": "unix-timestamp-webpack-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Emits a file that contains a unix timestamp of your latest webpack build",
   "main": "lib/UnixTimestampPlugin.js",
   "scripts": {
